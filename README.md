@@ -39,6 +39,57 @@ L'agent relit son fichier d'état, vous annonce où vous en êtes, et repart.
 
 **Quand le faire :** après chaque « c'est validé, on passe à la suite ». Si vous hésitez, faites-le — vous ne pouvez rien perdre.
 
+### Le déroulé complet, étape par étape
+
+Voici exactement ce que vous tapez, du début à la fin. Entre chaque bloc, vous discutez avec l'agent jusqu'à ce qu'il vous dise que l'étape est validée.
+
+```
+# 1. Le brief — on démarre
+/create-design brief
+```
+*…vous répondez aux questions, l'agent écrit le brief, vous le validez.*
+
+```
+# 2. Les écrans — on repart propre
+/clear
+/create-design structure
+```
+*…vous validez la liste des écrans et leurs enchaînements.*
+
+```
+# 3. Le style — on repart propre
+/clear
+/create-design habillage
+```
+*…vous envoyez vos inspirations, l'agent vous montre 2-3 versions, vous choisissez.*
+
+```
+# 3b. Retouche du style — on repart propre
+/clear
+/create-design 3b
+```
+*…vous dites ce qui ne va pas sur les images, jusqu'à ce que ça vous plaise.*
+
+```
+# 4. Tous les écrans — on repart propre
+/clear
+/create-design extension
+```
+
+```
+# 4b. Retouche des écrans — on repart propre
+/clear
+/create-design 4b
+```
+
+```
+# 5. Le code — on repart propre
+/clear
+/create-design implementation
+```
+
+Si vous ne vous souvenez plus où vous en êtes, tapez `/create-design` **sans rien après** : l'agent lit son fichier d'état et vous le dit.
+
 ---
 
 ## Comment ça se passe : 5 étapes
@@ -75,16 +126,16 @@ Vous pouvez aussi demander : **« qu'est-ce que tu vois qui ne va pas ? »** —
 
 ## Reprendre plus tard
 
-Fermez tout, revenez dans trois jours, tapez `/create-design` : l'agent relit son état et vous dit où vous en étiez.
-
-Vous pouvez aussi sauter directement à une étape :
+Fermez tout, revenez dans trois jours :
 
 ```
-/create-design habillage
+/clear
+/create-design
 ```
 
-Étapes disponibles : `brief`, `structure`, `habillage`, `3b`, `extension`, `4b`, `implementation`
-(`3b` et `4b` sont les phases de retouche du style et des écrans.)
+L'agent relit son état et vous dit où vous en étiez. Vous n'avez rien à lui réexpliquer.
+
+Pour sauter directement à une étape précise, ajoutez son nom — voir le déroulé complet plus haut. Noms disponibles : `brief`, `structure`, `habillage`, `3b`, `extension`, `4b`, `implementation`.
 
 ---
 
