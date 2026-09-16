@@ -124,40 +124,6 @@ Vous pouvez aussi demander : **« qu'est-ce que tu vois qui ne va pas ? »** —
 
 ---
 
-## Reprendre plus tard
-
-Fermez tout, revenez dans trois jours :
-
-```
-/clear
-/create-design
-```
-
-L'agent relit son état et vous dit où vous en étiez. Vous n'avez rien à lui réexpliquer.
-
-Pour sauter directement à une étape précise, ajoutez son nom — voir le déroulé complet plus haut. Noms disponibles : `brief`, `structure`, `habillage`, `3b`, `extension`, `4b`, `implementation`.
-
----
-
-## Questions fréquentes
-
-**J'ai déjà une app / des maquettes.**
-Dites-le à l'étape 2 : l'agent part de l'existant au lieu d'inventer.
-
-**Je n'ai aucune inspiration à donner.**
-Répondez « aucune ». L'agent proposera trois styles à partir de votre brief.
-
-**L'agent avance sans me demander mon avis.**
-Ça ne devrait pas arriver. Dites-lui « tu ne m'as pas demandé mon avis » et faites `/clear` avant de relancer.
-
-**Ça part dans une mauvaise direction.**
-Tout est commité étape par étape : revenez au commit précédent et relancez l'étape.
-
-**Combien de temps ?**
-Comptez une bonne session par étape. Les étapes 3 et 4 sont les plus longues, c'est là que vous regardez et que vous choisissez.
-
----
-
 ## Licence
 
 MIT. Le fichier `reference/plancher-visuel.md` est adapté d'`impeccable` v4.2.2 (Apache 2.0).
